@@ -3,9 +3,7 @@ const CustomError = require("../extensions/custom-error");
 module.exports = function createDreamTeam(members) {
   let crypt = [];
 
-  if (typeof members !== 'object' || 
-      members === null ||
-      members[0] === undefined) {
+  if (!Array.isArray(members)) {
 		return false;
   } else {
 	  for (let i = 0; i < members.length; i++) {

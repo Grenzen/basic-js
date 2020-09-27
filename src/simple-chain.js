@@ -5,7 +5,7 @@ const chainMaker = {
     throw new CustomError('Not implemented');
     // remove line with error and write your code here
   },
-  addLink(value) {
+  addLink(value = '()') {
     throw new CustomError('Not implemented');
     // remove line with error and write your code here
   },
